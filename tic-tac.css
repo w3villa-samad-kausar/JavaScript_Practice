@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #FFFFE8;
+}
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+  color: #012A36;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.game {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: #8CFFDA;
+  color: #7E52A0;
+  font-size: 48px;
+  text-align: center;
+  box-shadow:0 2px 4px #29274C;
+}
+
+.button-group{
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+#new-game{
+  background-color: #012A36;
+  color: #FFFFE8;
+  font-size: 24px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+#reset-game{
+  background-color: #012A36;
+  color: #FFFFE8;
+  font-size: 24px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#message{
+  margin-top: 50px;
+  color: #012A36;
+  font-size: 36px;
+}
+
+.hide{
+  display: none;
+}
