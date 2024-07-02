@@ -1,0 +1,16 @@
+{
+  "name": "js_session",
+  "version": "1.0.0",
+  "description": "Session on java script of ES6",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npm start": "node server.js"
+  },
+  "author": "Anant",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

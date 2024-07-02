@@ -1,0 +1,25 @@
+/* CSS Boilerplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .wrapper{
+      max-width: 1140px;
+      margin: auto;
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    li{
+      padding-inline: 20px;
+    }
