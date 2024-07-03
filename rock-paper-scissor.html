@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor Game</title>
+  <link rel="stylesheet" href="rock-paper.css">
+</head>
+<body>
+  <header class="center">Rock Paper Scissor Game</header>
+  <div class="wrapper">
+    <div class="choices">
+      <div class="choice" id="Rock">
+        <img title="Rock" src="rock.png" alt="rock">
+      </div>
+      <div class="choice" id="Paper">
+        <img title="Paper" src="paper.png" alt="paper">
+      </div>
+      <div class="choice" id="Scissors">
+        <img title="Scissors" src="scissors.png" alt="scissors">
+      </div>
+    </div>
+    <div class="score-card">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+    <div class="message-container">
+      <div class="comp-choice"><p class="comp-choice-para hide">Computer chose:</p></div>
+      <div class="message"><p class="message-para">Play your move</p></div>
+    </div>
+  </div>
+  <script src="rock-paper.js"></script>
+</body>
+</html>

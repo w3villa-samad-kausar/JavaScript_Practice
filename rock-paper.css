@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+body{
+  background-color: #FFFFE8;
+}
+.wrapper {
+  max-width: 1140px;
+  margin: auto;
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+header{
+  background-color: #FFC8DD;
+  height: 80px;
+  font-size: 48px;
+  color: #48435C;
+}
+.choices{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+img{
+  width: 200px;
+  padding: 20px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+img:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.score-card{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 30px;
+  margin-top: 40px;
+  color: #48435C;
+}
+#user-score,#comp-score{
+  font-size: 40px;
+}
+.message-container{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.comp-choice-para{
+  font-size: 30px;
+  background-color: #A2D2FF;
+  color: #48435C;
+  display: inline;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+.message-para{
+  font-size: 30px;
+  background-color: #AA3E98;
+  color: white;
+  display: inline;
+  padding: 10px;
+  border-radius: 15px;
+}
+.hide{
+  display: none;
+}
