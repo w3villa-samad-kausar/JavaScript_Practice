@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello Samad</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+
+  <script>
+    const startButton = document.getElementById('start');
+    const stopButton = document.getElementById('stop');
+    let intervalId = null;
+
+    const printMessage = function() {
+      console.log('Hello Samad', Date.now());
+    }
+
+    startButton.addEventListener('click', () => {
+      if (!intervalId) {
+        intervalId = setInterval(printMessage, 1000);
+        console.log("Started");
+      }
+    });
+
+    stopButton.addEventListener('click', () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+        console.log("Stopped");
+      }
+    });
+  </script>
+</body>
+</html>

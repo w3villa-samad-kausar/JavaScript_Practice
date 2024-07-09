@@ -3,13 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
+  <title>Color Flipper - Hex</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    nav .navLinks ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav .navLinks ul li {
+      margin: 0 10px;
+    }
+    nav .navLinks ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 50px); /* Subtracting the height of the nav */
+      text-align: center;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
 
   <nav>
-    <div class="navCenter">Color flipper</div>
+    <div class="navCenter">Color Flipper</div>
     <div class="navLinks">
       <ul>
         <li><a href="colorFlipper.html">Simple</a></li>
@@ -20,10 +75,10 @@
 
   <main>
     <div class="container">
-      <h1>Background Color: <span class="colour">
-        #f1f5f8
-      </span></h1>
-      <button class="btn" id="btn">click me</button>
+      <h1>Hex Color Flipper</h1>
+      <h2>Background Color: <span class="colour">#f1f5f8</span></h2>
+      <button class="btn" id="start">Start</button>
+      <button class="btn" id="stop">Stop</button>
     </div>
   </main>
   <script src="hex.js"></script>

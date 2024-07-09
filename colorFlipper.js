@@ -1,19 +1,24 @@
 const colours=["red","blue","green","yellow","brown","grey","purple"]
-const btn=document.getElementById("btn");
+const startButton=document.getElementById("start");
+const stopButton=document.getElementById("stop");
 const colour=document.querySelector(".colour");
-
-btn.addEventListener("click",function(){
-
+let intervalId=null
+const selectColor=function(){
+  
   const randomNumber=getRandomNumber();
-  console.log(randomNumber);
-  
   document.body.style.backgroundColor=colours[randomNumber];
-
   colour.textContent=colours[randomNumber]
-  
 
+}
+const settingInterval=function(){
+  intervalId=setInterval(selectColor,500);
+}
+const stoppingInterval=function(){
+  clearInterval(intervalId);
+}
 
-})
+startButton.addEventListener("click",settingInterval)
+stopButton.addEventListener('click',stoppingInterval);
 
 function getRandomNumber(){
   return Math.floor(Math.random()*colours.length);
