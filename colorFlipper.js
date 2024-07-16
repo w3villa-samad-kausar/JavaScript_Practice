@@ -11,10 +11,14 @@ const selectColor=function(){
 
 }
 const settingInterval=function(){
-  intervalId=setInterval(selectColor,500);
+  if(!intervalId){
+    intervalId=setInterval(selectColor,500);
+  }
+  
 }
 const stoppingInterval=function(){
   clearInterval(intervalId);
+  intervalId=null;
 }
 
 startButton.addEventListener("click",settingInterval)

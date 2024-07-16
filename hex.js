@@ -17,10 +17,14 @@ const selectColor=function(){
   colour.textContent=hexColour;
   }
 const settingInterval=function(){
-  intervalId=setInterval(selectColor,500);
+  if(!intervalId){
+    intervalId=setInterval(selectColor,500);
+
+  }
 }
 const stopInterval=function(){
   clearInterval(intervalId);
+  intervalId=null;
 }
 
 startButton.addEventListener("click",settingInterval)
